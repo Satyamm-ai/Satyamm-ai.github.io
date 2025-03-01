@@ -1,37 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satyam Kumar – Web Dev & AI Automation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Hi, I'm Satyam Kumar</h1>
-        <p>Web Developer | AI Automation Enthusiast</p>
-        <nav>
-            <a href="https://github.com/Satyamm-ai" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/satyam-kumar-a58a97253" target="_blank">LinkedIn</a>
-            <a href="https://www.youtube.com/@Factstory-Ai" target="_blank">YouTube</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Satyam Kumar | Portfolio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Satyam Kumar</a>
+                </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>6 months experience in Web Development & AI Automation. Passionate about building smart web solutions and AI-powered automation.</p>
-    </section>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/Satyamm-ai/project1" target="_blank">Project 1</a></li>
-            <li><a href="https://github.com/Satyamm-ai/project2" target="_blank">Project 2</a></li>
-        </ul>
-    </section>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-    <footer>
-        <p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </footer>
-</body>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Satyam Kumar</span><br> Web Developer & AI Automation Enthusiast</h1>
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.instagram.com/satyam.k24" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/Satyamm-ai" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/satyam-kumar-a58a97253" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.youtube.com/@Factstory-Ai" class="home__social-icon"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+                <div class="about__container bd-grid">
+                    <div>
+                        <h2 class="about__subtitle">I'm Satyam Kumar</h2>
+                        <p class="about__text">I have 6 months of experience in Web Development & AI Automation. I specialize in creating intelligent web solutions, automating workflows, and building innovative projects using Webflow, JavaScript, Python, and AI-driven tools.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Technical Skills</h2>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon'></i>
+                                <span class="skills__name">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-code skills__icon'></i>
+                                <span class="skills__name">Webflow & Web Development</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-brain skills__icon'></i>
+                                <span class="skills__name">AI Automation & APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK (Projects) =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+                <div class="work__container bd-grid">
+                    <a href="https://github.com/Satyamm-ai/chatbot-project" class="work__img">
+                        <h3>AI Chatbot</h3>
+                        <p>A chatbot built with Python & OpenAI API.</p>
+                    </a>
+                    <a href="https://github.com/Satyamm-ai/web-scraper" class="work__img">
+                        <h3>Web Scraper</h3>
+                        <p>A Python-based web scraper for data extraction.</p>
+                    </a>
+                </div>
+            </section>
+
+            <!--===== YOUTUBE =====-->
+            <section class="youtube section" id="youtube">
+                <h2 class="section-title">Latest YouTube Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                <p><a href="https://www.youtube.com/@Factstory-Ai" target="_blank">More on YouTube</a></p>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__container bd-grid">
+                    <p>Let's build something amazing together! Contact me via Instagram or LinkedIn.</p>
+                    <a href="https://www.instagram.com/satyam.k24" class="button">DM on Instagram</a>
+                    <a href="https://www.linkedin.com/in/satyam-kumar-a58a97253" class="button">Connect on LinkedIn</a>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Satyam Kumar</p>
+            <p class="footer__copy">&#169; 2024 All rights reserved</p>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
